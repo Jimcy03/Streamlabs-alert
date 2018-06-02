@@ -1,0 +1,70 @@
+<div class="notification-container">
+  <div class="image-container">
+    <img class="Image" src="https://uploads.twitchalerts.com/000/066/188/353/donation_banner/b27e5776d58537ff74a2b82fb9a74acd.png" />
+    <!--
+      Adding an <img> tag to this section with class="image" will give it the
+      default styling of this alert layout. You may either hardcode the image
+      URL, or use the variable "{image}" to have the URL of any image you
+      have uploaded on the Media tab automatically inserted.
+
+      For example:
+      <img class="image" src="https://mbt-user-upload.s3.amazonaws.com/uncodinatx/muxy-character.svg" />
+
+      Or
+      <img class="image" src="{image}" />
+
+      If you have uploaded a webm video instead, use the "{video}" variable inside a <video> tag to have its URL automatically inserted.
+
+      For example:
+        <video class="video" autoplay loop muted="true">
+          <source src="{video}" type="video/webm">
+        </video>
+    -->
+    
+      
+        <video class="video" autoplay loop muted="false">
+          <source src="{video}" type="video/webm">
+        </video>
+      
+    
+  </div>
+
+  <div class="text-container">
+    <div class="title">
+      <span class='keyword name'>{name}</span>
+    </div>
+
+    <div class="subtitle">
+      Gracias por esa sub!!!
+    </div>
+  </div>
+
+  <div class="tts">
+    <!--
+      Any text placed inside this div will be spoken using your selected
+      Text-To-Speech voice when the alert is shown. Note that by default
+      Text-To-Speech is disabled, so you will have to enable it on the Media
+      tab.
+    -->
+    
+  </div>
+  <audio src='https://uploads.twitchalerts.com/000/066/188/353/subs.ogg'></audio>
+
+  <!--
+    Adding any audio tag to your markup will play it automatically when
+    the alert is shown. Note that you should not add the 'autoplay' attribute
+    so that we can control exactly when the audio file plays. If you have
+    specified an audio alert in the Media tab (either one provided by us, or
+    a custom sound you have uploaded) you can have the source URL of that file
+    inserted automatically by using the '{audio}' variable.
+
+    For example:
+    <audio src='https://u.muxy.dev/assets/sounds/alert-sounds/Bloom.mp3'></audio>
+
+    Or
+    <audio src='{audio}'></audio>
+  -->
+  
+  <audio src="{Sound}"></audio>
+  
+</div>
